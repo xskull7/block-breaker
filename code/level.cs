@@ -14,5 +14,13 @@ public class level : MonoBehaviour
     {
         breakableblock++;
     }
+     public void breakedblock()
+    {
+        breakableblock--;
+        if(breakableblock<=0)
+        {
+            Sceneloader.SceneLoaders();
+        }
+    }
   
 }
